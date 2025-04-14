@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h2>Survey Form</h2>
+
+  <form id="surveyForm">
+    <label for="surveyNo">Survey No:</label>
+    <input type="text" id="surveyNo" name="surveyNo" />
+
+    <label for="aadharNo">Aadhar Number:</label>
+    <input type="text" id="aadharNo" name="aadharNo" maxlength="12" />
+
+    <label for="samagraNo">Samagra Number:</label>
+    <input type="text" id="samagraNo" name="samagraNo" />
+
+    <label for="name">Father/Husband Name:</label>
+    <input type="text" id="name" name="name" />
+
+    <label for="mobileNo">Mobile Number:</label>
+    <input type="text" id="mobileNo" name="mobileNo" maxlength="10" />
+
+    <input type="submit" value="Submit" />
+  </form>
+
+  <div id="result"></div>
+
+  <button id="savePdfBtn" style="display:none;">Save All 10 Entries as PDF</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
